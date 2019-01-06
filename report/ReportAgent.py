@@ -434,7 +434,7 @@ def parseLogConf(logconf, nodename):
         print "Not found related value(FORMAT, FILENAME, DIR_PATH)[", time_format, file_format, dir_path, "] in GLOBAL block in log.conf for node:" + nodename
         return None
     except Exception, e:
-        print "file:" + logconf + " not exist or other error: " + e + " for node:" + nodename
+        print "file:" + logconf + " not exist or other error: " + str(e) + " for node:" + nodename
     return None
 
 
